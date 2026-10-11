@@ -83,6 +83,7 @@ These flags are primarily useful for narrowing down bugs by selectively disablin
 | `ROSETTA_X87_LOG_RUN_BREAKS=1` | Log length + breaking opcode + gap-to-next-x87 for every x87 run — useful for finding what terminates runs in real workloads |
 | `ROSETTA_X87_LOGS=1` | Enable verbose logging output from the loader |
 | `ROSETTA_FORCE_CPU_MODE32=1` | Force the decoder into 32-bit mode (test-only; lets `aotinvoke` reach legacy opcodes like ARPL) |
+| `ROSETTA_X87_DISABLE_AOT=1` | Force every x86 library through the JIT instead of Rosetta's AOT translations (the old default). Crashes Cocoa apps on macOS 27 |
 | `ROSETTA_X87_DISABLE_SIP=1` | Patch the runtime's SIP check (`sys_csrctl`) so the unlocked `ROSETTA_*` runtime flags below are accepted; scrubs kernel-mirrored `ROSETTA_X87_*` apple[] entries. Off by default (leaves the SIP check intact) — required to use any flag in the [Unlocked Rosetta Runtime Flags](#unlocked-rosetta-runtime-flags) table |
 
 ### Unlocked Rosetta Runtime Flags
