@@ -1,0 +1,66 @@
+[  0%] Building CXX object rosetta_config/CMakeFiles/rosetta_config.dir/src/Config.cpp.o
+[ 25%] Linking CXX static library librosetta_config.a
+[ 25%] Built target rosetta_config
+[ 25%] Generating MIG mach_exc exception server
+[ 75%] Building CXX object rosetta_loader/CMakeFiles/runtime_loader.dir/src/main.cpp.o
+[ 75%] Building CXX object rosetta_loader/CMakeFiles/runtime_loader.dir/src/mach_exception.cpp.o
+[100%] Building CXX object rosetta_loader/CMakeFiles/runtime_loader.dir/src/offset_finder.cpp.o
+[100%] Building C object rosetta_loader/CMakeFiles/runtime_loader.dir/mach_excServer.c.o
+[100%] Linking CXX executable ../bin/runtime_loader
+Signing runtime_loader with entitlements
+/private/tmp/claude-501/-Users-ali-labs-src-bunniesinc-wine/df6bf7e7-73cb-4642-8f2f-cfaef207dae8/scratchpad/rx87/fork/build/bin/runtime_loader: replacing existing signature
+[100%] Built target runtime_loader
+[  3%] Built target rosetta_config
+[  3%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/DecodeOpcodeHook.cpp.o
+[  3%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/CustomTranslationHook.cpp.o
+[  7%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/hook.cpp.o
+[  7%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/IRBlock.cpp.o
+[ 10%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/CoreConfig.cpp.o
+[ 10%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/ClassifyArmPCHook.cpp.o
+[ 14%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/AssemblerHelpers.cpp.o
+[ 17%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/CoreLog.cpp.o
+[ 17%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/IROperand.cpp.o
+[ 21%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/IRInstr.cpp.o
+[ 25%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/IRTerminator.cpp.o
+[ 25%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/ModuleResult.cpp.o
+[ 25%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/TranslationResult.cpp.o
+[ 28%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/ThreadContextOffsets.cpp.o
+[ 32%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/AssemblerBuffer.cpp.o
+[ 32%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/X87State.cpp.o
+[ 35%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/FlagEffects.cpp.o
+[ 35%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/Opcode.cpp.o
+[ 39%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/AssemblerBase.cpp.o
+[ 39%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/TranslatorHelpers.cpp.o
+[ 42%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/Fixup.cpp.o
+[ 42%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/Register.cpp.o
+[ 46%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/Translator.cpp.o
+[ 46%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/TranslatorCustom.cpp.o
+[ 50%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/TranslatorX87.cpp.o
+[ 53%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/TranslatorX87Fusion.cpp.o
+[ 57%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/X87Cache.cpp.o
+[ 57%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/TranslatorX87Helpers.cpp.o
+[ 57%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/X87BridgeDemand.cpp.o
+[ 60%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/X87IRBuild.cpp.o
+[ 60%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/X87IROptimize.cpp.o
+[ 64%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/X87IRLower.cpp.o
+[ 64%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/RuntimeRoutine.cpp.o
+[ 67%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/RuntimeLibC.cpp.o
+[ 67%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/IRModuleData.cpp.o
+[ 71%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/OpcodeCompatibility.cpp.o
+[ 71%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/RosettaCore.cpp.o
+[ 75%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/RuntimeOperatorNew.cpp.o
+[ 75%] Building CXX object rosetta_core/CMakeFiles/rosetta_core_runtime.dir/src/RuntimeSymbols.cpp.o
+[ 78%] Linking CXX static library librosetta_core_runtime.a
+[ 78%] Built target rosetta_core_runtime
+[ 82%] Building CXX object rosetta_runtime/CMakeFiles/libRuntimeRosettax87.dir/src/X87State.cpp.o
+[ 85%] Building CXX object rosetta_runtime/CMakeFiles/libRuntimeRosettax87.dir/src/Export.cpp.o
+[ 85%] Building CXX object rosetta_runtime/CMakeFiles/libRuntimeRosettax87.dir/src/Log.cpp.o
+[ 85%] Building CXX object rosetta_runtime/CMakeFiles/libRuntimeRosettax87.dir/src/X87.cpp.o
+[ 89%] Building CXX object rosetta_runtime/CMakeFiles/libRuntimeRosettax87.dir/src/SIMDGuard.cpp.o
+[ 92%] Building CXX object rosetta_runtime/CMakeFiles/libRuntimeRosettax87.dir/src/main.cpp.o
+[ 92%] Building CXX object rosetta_runtime/CMakeFiles/libRuntimeRosettax87.dir/src/X87StackRegister.cpp.o
+[ 96%] Building CXX object rosetta_runtime/CMakeFiles/libRuntimeRosettax87.dir/src/X87Float80.cpp.o
+[100%] Building CXX object rosetta_runtime/CMakeFiles/libRuntimeRosettax87.dir/src/Offsets.cpp.o
+[100%] Building CXX object rosetta_runtime/CMakeFiles/libRuntimeRosettax87.dir/src/RuntimeConfig.cpp.o
+[100%] Linking CXX executable ../bin/libRuntimeRosettax87
+[100%] Built target libRuntimeRosettax87

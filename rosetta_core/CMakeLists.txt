@@ -65,6 +65,7 @@ target_compile_options(rosetta_core_runtime PRIVATE
     -fvectorize
     -finline-functions
     -fno-stack-protector
+    -fno-stack-check
     -fno-exceptions
     -fno-unwind-tables
     -fno-asynchronous-unwind-tables

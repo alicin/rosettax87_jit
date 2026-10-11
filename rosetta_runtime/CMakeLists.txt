@@ -16,6 +16,7 @@ set(OPTIMIZATION_FLAGS
     "-fvectorize"
     "-finline-functions"
     "-fno-stack-protector"
+    "-fno-stack-check"
     "-fno-exceptions"
     "-fno-unwind-tables"
     "-fno-asynchronous-unwind-tables"

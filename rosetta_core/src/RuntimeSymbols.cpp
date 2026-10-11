@@ -73,6 +73,11 @@ void* memmove(void* dst, const void* src, size_t n) {
     return rt_memmove(dst, src, n);
 }
 
+// Newer Apple clang lowers zeroing memset() calls to bzero() on Darwin.
+void bzero(void* dst, size_t n) {
+    rt_memset(dst, 0, n);
+}
+
 // ── String ────────────────────────────────────────────────────────────────────
 
 size_t strlen(const char* s) {
