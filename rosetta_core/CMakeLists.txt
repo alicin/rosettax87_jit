@@ -51,7 +51,6 @@ target_include_directories(rosetta_core_runtime PUBLIC ${CMAKE_CURRENT_SOURCE_DI
 target_compile_features(rosetta_core_runtime PUBLIC cxx_std_23)
 target_compile_options(rosetta_core_runtime PRIVATE
     -fvisibility=hidden
-    # -O0 # causes undefined behaivor - we can neglect performance for translation anyway
     -funroll-loops
     -fomit-frame-pointer
     -mcpu=apple-m1
@@ -67,6 +66,10 @@ target_compile_options(rosetta_core_runtime PRIVATE
     -fno-exceptions
     -fno-unwind-tables
     -fno-asynchronous-unwind-tables
+    # Optimized builds of the translator emit wrong x87 code (Apple clang 21: 44 of 55
+    # tests fail under the loader in Release). It only runs once per block, so keep it
+    # unoptimized whatever CMAKE_BUILD_TYPE adds.
+    -O0
 )
 target_link_libraries(rosetta_core_runtime PUBLIC rosetta_config)
 target_compile_definitions(rosetta_core_runtime PRIVATE ROSETTA_RUNTIME=1)
