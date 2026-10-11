@@ -834,14 +834,10 @@ int main(int argc, char* argv[]) {
         fprintf(stderr, "Failed to find Rosetta runtime\n");
         return 1;
     }
-    // Forcing every x86 library through the JIT crashes Cocoa apps (Swift/Foundation startup)
-    // on macOS 27's Rosetta. Code loaded at runtime, like Wine's PE modules, is JIT-translated
-    // and gets the fast x87 path either way, so AOT stays on unless explicitly disabled.
-    if (getenv("ROSETTA_X87_DISABLE_AOT")) {
-        uint8_t g_disable_aot_value = 1;
-        dbg.writeMemory(runtimeBase + offsetFinder.offsetDisableAot_, &g_disable_aot_value,
-                        sizeof(g_disable_aot_value));
-    }
+    uint8_t g_disable_aot_value = 1;
+
+    dbg.writeMemory(runtimeBase + offsetFinder.offsetDisableAot_, &g_disable_aot_value,
+                    sizeof(g_disable_aot_value));
 
     // Bypass SIP so injected ROSETTA_* apple[] vars are accepted by the
     // runtime's env loop. Opt-in via ROSETTA_X87_DISABLE_SIP. Two steps, only
