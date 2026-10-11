@@ -53,8 +53,6 @@ target_compile_options(rosetta_core_runtime PRIVATE
     -fvisibility=hidden
     # -O0 # causes undefined behaivor - we can neglect performance for translation anyway
     -funroll-loops
-    -march=native
-    -mtune=native
     -fomit-frame-pointer
     -mcpu=apple-m1
     -fno-builtin-sin

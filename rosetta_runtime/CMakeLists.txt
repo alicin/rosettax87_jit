@@ -7,8 +7,6 @@ set(OPTIMIZATION_FLAGS
     "-fvisibility=hidden"
     "-O3"
     "-funroll-loops"
-    "-march=native"
-    "-mtune=native"
     "-fomit-frame-pointer"
     "-mcpu=apple-m1"
     "-fno-builtin-sin"
